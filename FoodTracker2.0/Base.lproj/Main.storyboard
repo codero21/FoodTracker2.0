@@ -50,6 +50,9 @@
                             <constraint firstItem="YLa-aP-NTf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="r15-Qh-M0P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="zQa-Cf-BT7" id="U2N-zw-mu6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
