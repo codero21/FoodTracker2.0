@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     // ROLLIN: Properties
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var mealNameLabel: UILabel!
     
 
     override func viewDidLoad() {
