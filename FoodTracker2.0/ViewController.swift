@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     // ROLLIN: Action
     @IBAction func setDefaultLabelText(sender: UIButton) {
+        mealNameLabel.text = "Default Text"
     }
     
 
