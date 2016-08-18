@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     // ROLLIN: Properties
     @IBOutlet weak var nameTextField: UITextField!
