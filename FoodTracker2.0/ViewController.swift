@@ -23,6 +23,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         nameTextField.delegate = self
     }
     
+    // ROLLIN: UITextFieldDelegate
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // Hide the keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+    
     // ROLLIN: Action
     @IBAction func setDefaultLabelText(sender: UIButton) {
         mealNameLabel.text = "Default Text"
