@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        mealNameLabel.text = textField.text
+        mealNameLabel.text = textField.text 
     }
     
     // ROLLIN: Action
