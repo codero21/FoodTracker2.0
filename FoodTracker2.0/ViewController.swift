@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // ROLLIN: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
+    @IBOutlet weak var photoImageView: UIImageView!
     
 
     override func viewDidLoad() {
