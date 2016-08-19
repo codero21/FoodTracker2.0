@@ -40,7 +40,7 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9NL-ND-SEn"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-zL-oiZ">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhotos" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-zL-oiZ">
                                         <rect key="frame" x="0.0" y="117" width="320" height="320"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rM5-zL-oiZ" secondAttribute="height" multiplier="1:1" id="ghK-O3-IIX"/>
@@ -70,4 +70,7 @@
             <point key="canvasLocation" x="245" y="307"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhotos" width="540" height="540"/>
+    </resources>
 </document>
