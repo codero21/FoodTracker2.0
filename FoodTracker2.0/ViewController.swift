@@ -35,6 +35,23 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         mealNameLabel.text = textField.text 
     }
     
+    // ROLLIN: UIImagePickerControllerDelegate
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        // Dismiss the picker if the user canceled
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        // The info dictionary contains multiple representations of he image, and this uses the original
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Set photoImageView o display the selected image
+        photoImageView.image = selectedImage
+        
+        // Dismiss the picker
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     // ROLLIN: Action
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
         // Hide the keyboard
