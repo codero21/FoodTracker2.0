@@ -9,6 +9,11 @@
 import UIKit
 
 class RatingControl: UIView {
+    // ROLLIN: Properties
+    var rating = 0
+    var ratingButtons = [UIButton]()
+    
+    
 
     // ROLLIN: Initializer
     required init?(coder aDecoder: NSCoder) {
