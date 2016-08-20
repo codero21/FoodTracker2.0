@@ -19,14 +19,16 @@ class RatingControl: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        // Create a red button
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        button.backgroundColor = UIColor.redColor()
-        
-        button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(_:)), forControlEvents:
-            .TouchDown)
-        addSubview(button)
-      
+        for _ in 0..<5{
+            // Create 5 red button
+            let button = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+            button.backgroundColor = UIColor.redColor()
+            
+            button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(_:)), forControlEvents:
+                .TouchDown)
+            ratingButtons += [button]
+            addSubview(button)
+        }
     }
     
     // Layout button in the stack
