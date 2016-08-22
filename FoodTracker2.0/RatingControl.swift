@@ -10,7 +10,12 @@ import UIKit
 
 class RatingControl: UIView {
     // ROLLIN: Properties
-    var rating = 0
+    var rating = 0 {
+        // property observer
+        didSet {
+         setNeedsLayout()
+        }
+    }
     var ratingButtons = [UIButton]()
     let spacing = 5
     let starCount = 5
@@ -59,6 +64,7 @@ class RatingControl: UIView {
             button.frame = buttonFrame
         }
         
+        updateButtonSelectionStates()
     }
     
     // Layout button in the stack
@@ -71,6 +77,19 @@ class RatingControl: UIView {
 
     // ROLLIN: Button Action
     func ratingButtonTapped(button: UIButton) {
-        print("Button Pressed 👍🏾")
+        // TODO - DELETE
+        // print("Button Pressed 👍🏾")
+        
+        rating = ratingButtons.indexOf(button)! + 1
+        
+        updateButtonSelectionStates()
+    }
+    
+    // Helper method used to update the selection state od the button
+    func updateButtonSelectionStates() {
+        for (index, button) in ratingButtons.enumerate() {
+            // If the index of a button is is less than the rating, that button should be selected
+            button.selected = index < rating
+        }
     }
 }
