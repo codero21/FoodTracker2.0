@@ -78,7 +78,7 @@ class RatingControl: UIView {
     // ROLLIN: Button Action
     func ratingButtonTapped(button: UIButton) {
         // TODO - DELETE
-        // print("Button Pressed 👍🏾")
+        print("Button Pressed 👍🏾")
         
         rating = ratingButtons.indexOf(button)! + 1
         
