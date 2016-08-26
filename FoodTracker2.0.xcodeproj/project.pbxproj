@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3B16C231D6FCEA2002BCB8C /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B16C221D6FCEA2002BCB8C /* MealTableViewCell.swift */; };
 		E3EDF89B1D639089007E495A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDF89A1D639089007E495A /* AppDelegate.swift */; };
 		E3EDF89D1D639089007E495A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDF89C1D639089007E495A /* ViewController.swift */; };
 		E3EDF8A01D639089007E495A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDF89E1D639089007E495A /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3B16C221D6FCEA2002BCB8C /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		E3EDF8971D639089007E495A /* FoodTracker2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EDF89A1D639089007E495A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3EDF89C1D639089007E495A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				E3EDF89C1D639089007E495A /* ViewController.swift */,
 				E3EDF8BC1D67FF89007E495A /* RatingControl.swift */,
 				E3EDF89E1D639089007E495A /* Main.storyboard */,
+				E3B16C221D6FCEA2002BCB8C /* MealTableViewCell.swift */,
 				E3EDF8A11D639089007E495A /* Assets.xcassets */,
 				E3EDF8BA1D63992F007E495A /* LaunchScreen.storyboard */,
 				E3EDF8A61D639089007E495A /* Info.plist */,
@@ -207,6 +210,7 @@
 				E3EDF89D1D639089007E495A /* ViewController.swift in Sources */,
 				E3EDF8BD1D67FF89007E495A /* RatingControl.swift in Sources */,
 				E3EDF89B1D639089007E495A /* AppDelegate.swift in Sources */,
+				E3B16C231D6FCEA2002BCB8C /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +394,7 @@
 				E3EDF8B61D639089007E495A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3EDF8B71D639089007E495A /* Build configuration list for PBXNativeTarget "FoodTracker2.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +403,7 @@
 				E3EDF8B91D639089007E495A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
