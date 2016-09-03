@@ -51,8 +51,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         // Dismiss the picker
         dismissViewControllerAnimated(true, completion: nil)
-        
     }
+    
     // ROLLIN: Action
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
         // Hide the keyboard
@@ -73,7 +73,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBAction func setDefaultLabelText(sender: UIButton) {
         mealNameLabel.text = "Default Text"
     }
-    
 
 }
 
