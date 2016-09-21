@@ -12,7 +12,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     // ROLLIN: Properties
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
@@ -33,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        mealNameLabel.text = textField.text 
+        
     }
     
     // ROLLIN: UIImagePickerControllerDelegate
