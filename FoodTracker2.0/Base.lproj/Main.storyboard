@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Meal Table View Controller-->
+        <!--Your Meals-->
         <scene sceneID="nOu-1N-20b">
             <objects>
                 <tableViewController id="MPX-2T-hTE" customClass="MealTableViewController" customModule="FoodTracker2_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,9 @@
                             <outlet property="delegate" destination="MPX-2T-hTE" id="zdH-Wc-jVg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rvG-97-2DD"/>
+                    <navigationItem key="navigationItem" title="Your Meals" id="rvG-97-2DD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="glF-M8-tgH"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McB-6s-5kV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
