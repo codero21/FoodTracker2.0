@@ -53,7 +53,7 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="rvG-97-2DD">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="glF-M8-tgH">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="dJb-e6-ORX"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="AddItem" id="dJb-e6-ORX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,7 +82,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhotos" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-zL-oiZ">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhotos" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-zL-oiZ">
                                         <rect key="frame" x="120" y="42" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -92,7 +92,7 @@
                                             <outletCollection property="gestureRecognizers" destination="FGZ-Fk-jNj" appends="YES" id="6Fg-u9-7mc"/>
                                         </connections>
                                     </imageView>
-                                    <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="jBL-ZP-EsJ" customClass="RatingControl" customModule="FoodTracker2_0" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="jBL-ZP-EsJ" customClass="RatingControl" customModule="FoodTracker2_0" customModuleProvider="target">
                                         <rect key="frame" x="160" y="374" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
