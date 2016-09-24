@@ -71,6 +71,19 @@ class MealTableViewController: UITableViewController {
         
         return cell
     }
+    
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController
+            as? MealViewController, meal = sourceViewController.meal {
+            let newIndexPath = NSIndexPath(forItem: meals.count, inSection: 0)
+            
+            // This adds the new meal to the existing list of meals in the data model.
+            meals.append(meal)
+            
+            // This animates the addition of a new row to the table view for the cell contains information about the new meal
+            tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
