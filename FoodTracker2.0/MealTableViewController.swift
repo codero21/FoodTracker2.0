@@ -10,7 +10,7 @@ import UIKit
 
 class MealTableViewController: UITableViewController {
     
-    // ROLLIN: Properties
+    // MARK: Properties
     var meals = [Meal]()
 
     override func viewDidLoad() {

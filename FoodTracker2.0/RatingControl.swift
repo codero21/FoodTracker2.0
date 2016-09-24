@@ -9,7 +9,7 @@
 import UIKit
 
 class RatingControl: UIView {
-    // ROLLIN: Properties
+    // MARK: Properties
     var rating = 0 {
         // property observer
         didSet {
@@ -24,7 +24,7 @@ class RatingControl: UIView {
     
     
 
-    // ROLLIN: Initializer
+    // MARK: Initializer
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -75,7 +75,7 @@ class RatingControl: UIView {
         return CGSize(width: width, height: buttonSize)
     }
 
-    // ROLLIN: Button Action
+    // MARK: Button Action
     func ratingButtonTapped(button: UIButton) {
         // TODO - DELETE
         print("Button Pressed 👍🏾")

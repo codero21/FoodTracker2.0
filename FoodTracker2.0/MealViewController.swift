@@ -10,7 +10,7 @@ import UIKit
 
 class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    // ROLLIN: Properties
+    // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
@@ -31,9 +31,12 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         // Handle the text field's user input through delegate callbacks.
         nameTextField.delegate = self
+        
+        // Enable the Save button only if the text field has a valid Meal name.
+        checkValidMealName()
     }
     
-    // ROLLIN: UITextFieldDelegate
+    // MARK: 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         // Hide the keyboard
         textField.resignFirstResponder()
@@ -41,10 +44,11 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        
+        checkValidMealName()
+        navigationItem.title = textField.text
     }
     
-    // ROLLIN: UIImagePickerControllerDelegate
+    // MARK: UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         // Dismiss the picker if the user canceled
         dismissViewControllerAnimated(true, completion: nil)
@@ -61,8 +65,22 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    // ROLLIN: Navigation
+    // MARK: UITextFieldDelegate
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        // Disable the Save button while editing
+        saveButton.enabled = false
+    }
+    
+    // This is a helper method to disable the Save button if the text field is empty.
+    func checkValidMealName() {
+        // Disable the Save button if the text field is empty
+        let text = nameTextField.text ?? ""
+        saveButton.enabled = !text.isEmpty
+    }
+    
+    // MARK: Navigation
+
     // This method lets you configure a view controller before it's presented 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if saveButton === sender {
@@ -75,7 +93,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         }
     }
     
-    // ROLLIN: Action
+    // MARK: Action
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
         // Hide the keyboard
         nameTextField.resignFirstResponder()
